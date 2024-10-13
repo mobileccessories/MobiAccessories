@@ -1,0 +1,840 @@
+<html><head><base href="https://websimcreationengine.com/home">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MobiAccessories - Your one-stop shop for all mobile accessories. Discover the latest gadgets and enhance your mobile experience.">
+<meta name="keywords" content="mobile accessories, smartphone gadgets, phone cases, wireless earbuds, power banks">
+<meta name="author" content="MobiAccessories">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://websimcreationengine.com/home">
+<meta property="og:title" content="MobiAccessories - Enhance Your Mobile Experience">
+<meta property="og:description" content="Discover the latest accessories for your smartphone. Shop now for cases, earbuds, chargers, and more!">
+<meta property="og:image" content="https://websimcreationengine.com/images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://websimcreationengine.com/home">
+<meta property="twitter:title" content="MobiAccessories - Enhance Your Mobile Experience">
+<meta property="twitter:description" content="Discover the latest accessories for your smartphone. Shop now for cases, earbuds, chargers, and more!">
+<meta property="twitter:image" content="https://websimcreationengine.com/images/twitter-image.jpg">
+
+<title>MobiAccessories - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --light-text-color: #fff;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--light-text-color);
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+
+  nav ul li a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+
+  .search-cart-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-form {
+    margin-right: 1rem;
+  }
+
+  .search-input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .search-button {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-button:hover {
+    background-color: #2980b9;
+  }
+
+  .cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+    cursor: pointer;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text-color);
+  }
+
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+
+  .cta-button:hover {
+    background-color: #c0392b;
+  }
+
+  .featured-products {
+    padding: 3rem 0;
+  }
+
+  .featured-products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background-color: var(--light-text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 1.5rem;
+  }
+
+  .product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-price {
+    font-size: 1rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-rating {
+    color: #f39c12;
+    margin-bottom: 0.5rem;
+  }
+
+  .add-to-cart, .add-to-wishlist {
+    display: inline-block;
+    width: calc(50% - 5px);
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart:hover, .add-to-wishlist:hover {
+    background-color: #2980b9;
+  }
+
+  .add-to-wishlist {
+    background-color: #95a5a6;
+    margin-left: 10px;
+  }
+
+  .add-to-wishlist:hover {
+    background-color: #7f8c8d;
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 1rem;
+    min-width: 200px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section ul {
+    list-style-type: none;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-section ul li a {
+    color: var(--light-text-color);
+    text-decoration: none;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .social-icons a {
+    color: var(--light-text-color);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      margin-top: 1rem;
+    }
+
+    nav ul li {
+      margin-left: 0;
+      margin-right: 1rem;
+    }
+
+    .search-cart-wrapper {
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    .search-form {
+      flex-grow: 1;
+      margin-right: 1rem;
+    }
+
+    .search-input {
+      width: 100%;
+    }
+
+    .hero {
+      height: 400px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  /* Mini Cart Styles */
+  .mini-cart {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--light-text-color);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 300px;
+    display: none;
+    z-index: 1000;
+  }
+
+  .mini-cart.show {
+    display: block;
+  }
+
+  .mini-cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .mini-cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+
+  .mini-cart-item-info {
+    flex-grow: 1;
+  }
+
+  .mini-cart-item-name {
+    font-weight: bold;
+  }
+
+  .mini-cart-item-price {
+    color: var(--accent-color);
+  }
+
+  .mini-cart-total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .mini-cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .mini-cart-buttons a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--light-text-color);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .view-cart-btn {
+    background-color: var(--secondary-color);
+  }
+
+  .view-cart-btn:hover {
+    background-color: #2980b9;
+  }
+
+  .checkout-btn {
+    background-color: var(--accent-color);
+  }
+
+  .checkout-btn:hover {
+    background-color: #c0392b;
+  }
+
+  /* Product Modal Styles */
+  .product-modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .product-modal-content {
+    background-color: var(--light-text-color);
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-modal:hover,
+  .close-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .product-modal-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .product-modal-info {
+    margin-bottom: 1rem;
+  }
+
+  .product-modal-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-modal-price {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-modal-description {
+    margin-bottom: 1rem;
+  }
+
+  .product-modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Inquiry Form Styles */
+  .inquiry-form {
+    background-color: var(--light-text-color);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+  }
+
+  .inquiry-form h2 {
+    margin-bottom: 1rem;
+  }
+
+  .inquiry-form form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .inquiry-form input,
+  .inquiry-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .inquiry-form button {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .inquiry-form button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="https://websimcreationengine.com/home" class="logo">MobiAccessories</a>
+      <nav>
+        <ul>
+          <li><a href="https://websimcreationengine.com/home">Home</a></li>
+          <li><a href="https://websimcreationengine.com/products">Products</a></li>
+          <li><a href="https://websimcreationengine.com/account">Account</a></li>
+          <li><a href="https://websimcreationengine.com/wishlist">Wishlist</a></li>
+        </ul>
+      </nav>
+      <div class="search-cart-wrapper">
+        <form class="search-form" action="https://websimcreationengine.com/search" method="GET">
+          <input type="text" name="q" placeholder="Search products..." class="search-input">
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="cart-icon" id="cartIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mini-cart" id="miniCart">
+    <div id="miniCartItems"></div>
+    <div class="mini-cart-total">Total: $<span id="miniCartTotal">0.00</span></div>
+    <div class="mini-cart-buttons">
+      <a href="https://websimcreationengine.com/cart" class="view-cart-btn">View Cart</a>
+      <a href="https://websimcreationengine.com/checkout" class="checkout-btn">Checkout</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Enhance Your Mobile Experience</h1>
+        <p>Discover the latest accessories for your smartphone</p>
+        <a href="https://websimcreationengine.com/products" class="cta-button">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="featured-products container">
+      <h2>Featured Products</h2>
+      <div class="product-grid" id="productGrid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1612769254949-bdbbeada88b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Wireless Earbuds" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Wireless Earbuds</h3>
+            <p class="product-price">$89.99</p>
+            <div class="product-rating">
+              ★★★★½
+            </div>
+            <button class="add-to-cart" data-id="1">Add to Cart</button>
+            <button class="add-to-wishlist" data-id="1">Add to Wishlist</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1541099266149-ff78266c6ee3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Protective Phone Case" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Protective Phone Case</h3>
+            <p class="product-price">$24.99</p>
+            <div class="product-rating">
+              ★★★★
+            </div>
+            <button class="add-to-cart" data-id="2">Add to Cart</button>
+            <button class="add-to-wishlist" data-id="2">Add to Wishlist</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1542047572401-37edf7e8a954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Tablet Stand" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Adjustable Tablet Stand</h3>
+            <p class="product-price">$27.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1586941756923-830029962fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Wireless Charging Pad" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Fast Wireless Charging Pad</h3>
+            <p class="product-price">$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Phone Lens Kit" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Professional Phone Lens Kit</h3>
+            <p class="product-price">$59.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1609692814859-811317a34bd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Smartphone Gimbal" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">3-Axis Smartphone Gimbal</h3>
+            <p class="product-price">$89.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Fitness Tracker" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Smart Fitness Tracker</h3>
+            <p class="product-price">$79.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquiry-form container">
+      <h2>Request a Product</h2>
+      <form id="inquiryForm">
+        <input type="text" name="username" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="productName" placeholder="Product Name" required>
+        <textarea name="description" placeholder="Product Description" required></textarea>
+        <input type="file" name="productImage" accept="image/*">
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="productModal" class="product-modal">
+    <div class="product-modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="product-modal-image">
+      <div class="product-modal-info">
+        <h2 class="product-modal-name"></h2>
+        <p class="product-modal-price"></p>
+        <p class="product-modal-description"></p>
+      </div>
+      <div class="product-modal-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist">Add to Wishlist</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://websimcreationengine.com/about">About Us</a></li>
+          <li><a href="https://websimcreationengine.com/contact">Contact Us</a></li>
+          <li><a href="https://websimcreationengine.com/faq">FAQ</a></li>
+          <li><a href="https://websimcreationengine.com/shipping">Shipping Information</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="https://websimcreationengine.com/returns">Returns & Exchanges</a></li>
+          <li><a href="https://websimcreationengine.com/track-order">Track Your Order</a></li>
+          <li><a href="https://websimcreationengine.com/privacy">Privacy Policy</a></li>
+          <li><a href="https://websimcreationengine.com/terms">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com/mobiaccessories" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/mobiaccessories" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/mobiaccessories" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 MobiAccessories. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-app.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-firestore.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-auth.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-storage.min.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    try {
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      const auth = firebase.auth();
+
+      try {
+        auth.onAuthStateChanged(user => {
+          if (user) {
+            console.log('User is signed in:', user.email);
+          } else {
+            console.log('No user is signed in.');
+          }
+        });
+      } catch (error) {
+        console.error('Error in auth state observer:', error);
+      }
+    } catch (error) {
+      console.error('Error initializing Firebase:', error);
+    }
+
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        try {
+          const productCard = e.target.closest('.product-card');
+          if (productCard) {
+            const productName = productCard.querySelector('.product-name')?.textContent;
+            const productPriceElement = productCard.querySelector('.product-price');
+            const productPrice = productPriceElement ? parseFloat(productPriceElement.textContent.replace('$', '')) : 0;
+            const productImage = productCard.querySelector('.product-image')?.src;
+
+            if (productName && productPrice && productImage) {
+              addToCart({
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                quantity: 1
+              });
+
+              alert(`${productName} added to cart!`);
+            } else {
+              console.error('Invalid product data');
+            }
+          } else {
+            console.error('Product card not found');
+          }
+        } catch (error) {
+          console.error('Error adding to cart:', error);
+        }
+      });
+    });
+
+    function addToCart(product) {
+      try {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const existingProductIndex = cart.findIndex(item => item.name === product.name);
+
+        if (existingProductIndex !== -1) {
+          cart[existingProductIndex].quantity += 1;
+        } else {
+          cart.push(product);
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        const user = auth.currentUser;
+        if (user) {
+          db.collection('users').doc(user.uid).set({ cart: cart }, { merge: true })
+            .then(() => console.log('Cart updated in Firestore'))
+            .catch(error => console.error('Error updating cart in Firestore:', error));
+        }
+      } catch (error) {
+        console.error('Error in addToCart function:', error);
+      }
+    }
+  </script>
+</body></html>
